@@ -1,7 +1,7 @@
 {
   "name": "原価計算基準",
   "short_name": "原価計算",
-  "start_url": "/cpa/cost_accounting_standard.html",
+  "start_url": "/cost_accounting_standard.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
