@@ -2,8 +2,8 @@ const CACHE_NAME = "cost-accounting-cache-v1";
 const FILES_TO_CACHE = [
   "/cpa/cost_accounting_standard.html",
   "/cpa/manifest.json",
-  "/cpa/icon-192x192.png",
-  "/cpa/icon-512x512.png"
+  "/cpa/icon_192.png",
+  "/cpa/icon_512.png"
 ];
 
 // インストール時にキャッシュ
