@@ -106,6 +106,18 @@
                 console.log("Service Worker registered!");
             });
         }
+
+                  // スマホの場合のみ実行
+        document.addEventListener('click', function(e) {
+            // 画面幅が768px以下（スマホの想定）かチェック
+            if (window.innerWidth <= 768) {
+                var toc = document.getElementById('toc');
+                var toggleBtn = document.getElementById('menu-toggle');
+              　// クリックされた要素が目次、または目次ボタンでなければ
+              　if (!toc.contains(e.target) && e.target !== toggleBtn) {
+                // 目次を左に隠す
+                toc.style.left = '-100%';
+               }}});
     </script>
     
 </head>
