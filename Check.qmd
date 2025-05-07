@@ -5,14 +5,25 @@ date: today
 format:
   html:
     toc: true
-    toc_float: true
+    toc_float: false 
     toc-depth: 4
     toc-expand: 2
     toc-location: left
-    css: https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/darkmode.css
-    #css: ../resources/qmd/darkmode.css
+    #css: https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/darkmode.css
+    css: ../resources/qmd/darkmode.css
 ---
 # MCQ Check
+
+```{=html}
+<button id="toc-toggle">☰ TOC</button>
+<script>
+  const toc = document.getElementById("TOC");
+  const btn = document.getElementById("toc-toggle");
+  btn.addEventListener("click", () => {
+    toc.classList.toggle("show");
+  });
+</script>
+```
 
 ## Business_Law
 
