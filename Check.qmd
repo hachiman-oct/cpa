@@ -16,12 +16,28 @@ format:
 
 ## Business_Law
 
+```{r}
+for (i in 1:100) {
+  print(i)
+}
+```
+
 
 ## Management_Accounting
 
+```{r}
+for (i in 1:100) {
+  print(i)
+}
+```
 
 ## Auditing
 
+```{r}
+for (i in 1:100) {
+  print(i)
+}
+```
 
 ## Financial_Accounting
 ### 投資その他の資産の具体例
