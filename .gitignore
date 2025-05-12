@@ -2,8 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-*.png
-*.ps1
 icons/
 *.qmd
 *.Rproj
