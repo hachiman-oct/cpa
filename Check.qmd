@@ -1,5 +1,5 @@
 ---
-title: "MCQ Check"
+title: "Check"
 author: "[hachiman_oct](https://github.com/hachiman-oct)"
 date: today
 format:
@@ -45,28 +45,29 @@ format:
 
 ### フリーキャッシュフロー
 $$
-\sum^{\infty} ar^{n} = \frac{ar}{1-r}\\
-r = \frac{1}{1+b}\\
-\therefore\frac{ar}{1-r} = \frac{a}{b}\\
+\sum^{\infty} ar^{n} = \frac{ar}{1-r}
 $$
 $$
-\begin{align}
-NOPAT &= 営業利益 \times (1-税率) \\
-FCF &= NOPAT + Dep - 正味運転資本増加額 - 設備投資額
-\end{align}
+r = \frac{1}{1+b}
 $$
+$$
+\therefore\frac{ar}{1-r} = \frac{a}{b}
+$$
+
+
+NOPAT = 営業利益 * (1-税率)
+
+FCF = NOPAT + Dep - 正味運転資本増加額 - 設備投資額
+
+
 
 ### EVA
 経済的付加価値は営業利益から税額と資本コストの額を控除するが，この場合の税額は，有利子負債コストの節税効果は反映されていない
-$$
-\begin{align}
-CC &= 期首投下資本 \times 加重平均資本コスト\\
-EVA &= NOPAT - CC
-\end{align}
-$$
 
-||正常原価|げんじつてき|
-|-|-|-|
+CC = 期首投下資本 * 加重平均資本コスト
+
+EVA = NOPAT - CC
+
 
 ## Auditing
 
@@ -104,14 +105,9 @@ $$
 ### 株主資本
 
 #### 分配可能額
-$$
-\begin{aligned}
+
 分配可能額 = 剰余金 - 分配時における自己株式- 自己株式の処分の対価 - 前期B/Sその他有価証券(negative) - 前期B/S分配制限額
-\end{aligned}
-$$
 
 #### 準備金の積立額
 
-$$
-分配制限額(> 0) = \max\{\frac{のれん}{2} - (資本金 + 準備金), その他資本剰余金\} + 繰延資産
-$$
+分配制限額(> 0) = max{$\frac{のれん}{2}$ - (資本金 + 準備金), その他資本剰余金} + 繰延資産
