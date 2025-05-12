@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="hachiman_oct">
-<meta name="dcterms.date" content="2025-05-07">
+<meta name="dcterms.date" content="2025-05-11">
 
 <title>MCQ Check</title>
 <style>
@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -72,6 +37,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="Check_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="Check_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/darkmode.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/toc-right-toggle.css">
@@ -88,7 +82,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#mcq-check" id="toc-mcq-check" class="nav-link active" data-scroll-target="#mcq-check">MCQ Check</a>
   <ul>
   <li><a href="#business_law" id="toc-business_law" class="nav-link" data-scroll-target="#business_law">Business_Law</a></li>
-  <li><a href="#management_accounting" id="toc-management_accounting" class="nav-link" data-scroll-target="#management_accounting">Management_Accounting</a></li>
+  <li><a href="#management_accounting" id="toc-management_accounting" class="nav-link" data-scroll-target="#management_accounting">Management_Accounting</a>
+  <ul class="collapse">
+  <li><a href="#原価管理とは" id="toc-原価管理とは" class="nav-link" data-scroll-target="#原価管理とは">原価管理とは</a></li>
+  <li><a href="#製造間接費の部門別計算" id="toc-製造間接費の部門別計算" class="nav-link" data-scroll-target="#製造間接費の部門別計算">製造間接費の部門別計算</a>
+  <ul class="collapse">
+  <li><a href="#部門費の1次集計" id="toc-部門費の1次集計" class="nav-link" data-scroll-target="#部門費の1次集計">部門費の1次集計</a></li>
+  <li><a href="#複数配賦基準法" id="toc-複数配賦基準法" class="nav-link" data-scroll-target="#複数配賦基準法">複数配賦基準法</a></li>
+  </ul></li>
+  <li><a href="#個別原価計算" id="toc-個別原価計算" class="nav-link" data-scroll-target="#個別原価計算">個別原価計算</a></li>
+  <li><a href="#副産物" id="toc-副産物" class="nav-link" data-scroll-target="#副産物">副産物</a></li>
+  <li><a href="#フリーキャッシュフロー" id="toc-フリーキャッシュフロー" class="nav-link" data-scroll-target="#フリーキャッシュフロー">フリーキャッシュフロー</a></li>
+  <li><a href="#eva" id="toc-eva" class="nav-link" data-scroll-target="#eva">EVA</a></li>
+  </ul></li>
   <li><a href="#auditing" id="toc-auditing" class="nav-link" data-scroll-target="#auditing">Auditing</a></li>
   <li><a href="#financial_accounting" id="toc-financial_accounting" class="nav-link" data-scroll-target="#financial_accounting">Financial_Accounting</a>
   <ul class="collapse">
@@ -121,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 7, 2025</p>
+      <p class="date">May 11, 2025</p>
     </div>
   </div>
   
@@ -142,15 +148,100 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="management_accounting" class="level2">
 <h2 class="anchored" data-anchor-id="management_accounting">Management_Accounting</h2>
+<section id="原価管理とは" class="level3">
+<h3 class="anchored" data-anchor-id="原価管理とは">原価管理とは</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th></th>
+<th></th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>原価管理</td>
+<td>原価計画<br>(原価低減)</td>
+<td>原価企画,<br>原価改善</td>
+<td>原価計算基準が規定する原価管理には含まない</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>原価統制</td>
+<td>原価維持</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="製造間接費の部門別計算" class="level3">
+<h3 class="anchored" data-anchor-id="製造間接費の部門別計算">製造間接費の部門別計算</h3>
+<section id="部門費の1次集計" class="level4">
+<h4 class="anchored" data-anchor-id="部門費の1次集計">部門費の1次集計</h4>
+<ul>
+<li>原価管理の見地から近年は部門個別費と部門共通費の区別をなくし，すべて部門個別費として把握する動向が見られる</li>
+</ul>
+</section>
+<section id="複数配賦基準法" class="level4">
+<h4 class="anchored" data-anchor-id="複数配賦基準法">複数配賦基準法</h4>
+<ul>
+<li>複数配賦基準法のもとでは，純理論的には相互配賦法の採用が前提</li>
+</ul>
+</section>
+</section>
+<section id="個別原価計算" class="level3">
+<h3 class="anchored" data-anchor-id="個別原価計算">個別原価計算</h3>
+<ul>
+<li>予算操業度は期待実際操業度や短期予定操業度と同義と捉えてよい</li>
+</ul>
+</section>
+<section id="副産物" class="level3">
+<h3 class="anchored" data-anchor-id="副産物">副産物</h3>
+<p>販管費の見積額は控除しない</p>
+</section>
+<section id="フリーキャッシュフロー" class="level3">
+<h3 class="anchored" data-anchor-id="フリーキャッシュフロー">フリーキャッシュフロー</h3>
+<p><span class="math display">\[
+\sum^{\infty} ar^{n} = \frac{ar}{1-r}\\
+r = \frac{1}{1+b}\\
+\therefore\frac{ar}{1-r} = \frac{a}{b}\\
+\]</span> <span class="math display">\[
+\begin{align}
+NOPAT &amp;= 営業利益 \times (1-税率) \\
+FCF &amp;= NOPAT + Dep - 正味運転資本増加額 - 設備投資額
+\end{align}
+\]</span></p>
+</section>
+<section id="eva" class="level3">
+<h3 class="anchored" data-anchor-id="eva">EVA</h3>
+<p>経済的付加価値は営業利益から税額と資本コストの額を控除するが，この場合の税額は，有利子負債コストの節税効果は反映されていない <span class="math display">\[
+\begin{align}
+CC &amp;= 期首投下資本 \times 加重平均資本コスト\\
+EVA &amp;= NOPAT - CC
+\end{align}
+\]</span></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>正常原価</th>
+<th>げんじつてき</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</section>
 </section>
 <section id="auditing" class="level2">
 <h2 class="anchored" data-anchor-id="auditing">Auditing</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "1"</code></pre>
-</div>
-</div>
 </section>
 <section id="financial_accounting" class="level2">
 <h2 class="anchored" data-anchor-id="financial_accounting">Financial_Accounting</h2>
@@ -158,8 +249,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="投資その他の資産の具体例">投資その他の資産の具体例</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 55%">
-<col style="width: 44%">
+<col style="width: 36%">
+<col style="width: 63%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -207,8 +298,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="有価証券の分類">有価証券の分類</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 55%">
-<col style="width: 44%">
+<col style="width: 33%">
+<col style="width: 66%">
 </colgroup>
 <tbody>
 <tr class="odd">
