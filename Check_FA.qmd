@@ -1,5 +1,5 @@
 ---
-title: "Check"
+title: "Check_FA"
 author: "[hachiman_oct](https://github.com/hachiman-oct)"
 date: today
 format:
@@ -13,66 +13,12 @@ format:
       - https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/toc-right-toggle.css
 ---
 
-# MCQ Check
+# Check_FA
 
 ```{=html}
 <button id="toc-toggle">☰ TOC</button>
 <script src="https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/toc-right-toggle.js"></script>
 ```
-
-## Business_Law
-
-## Management_Accounting
-
-### 原価管理とは
-|          |                    |                    | 備考 |
-|----------|----------|----------|--------------------------------------------|
-| 原価管理 | 原価計画<br>(原価低減) | 原価企画,<br>原価改善 | 原価計算基準が規定する原価管理には含まない |
-|          | 原価統制           | 原価維持           ||
-
-### 製造間接費の部門別計算
-#### 部門費の1次集計
-- 原価管理の見地から近年は部門個別費と部門共通費の区別をなくし，すべて部門個別費として把握する動向が見られる
-
-#### 複数配賦基準法
-- 複数配賦基準法のもとでは，純理論的には相互配賦法の採用が前提
-
-### 個別原価計算
-- 予算操業度は期待実際操業度や短期予定操業度と同義と捉えてよい
-
-### 副産物
-販管費の見積額は控除しない
-
-### フリーキャッシュフロー
-$$
-\sum^{\infty} ar^{n} = \frac{ar}{1-r}
-$$
-$$
-r = \frac{1}{1+b}
-$$
-$$
-\therefore\frac{ar}{1-r} = \frac{a}{b}
-$$
-
-
-NOPAT = 営業利益 * (1-税率)
-
-FCF = NOPAT + Dep - 正味運転資本増加額 - 設備投資額
-
-
-
-### EVA
-経済的付加価値は営業利益から税額と資本コストの額を控除するが，この場合の税額は，有利子負債コストの節税効果は反映されていない
-
-CC = 期首投下資本 * 加重平均資本コスト
-
-EVA = NOPAT - CC
-
-
-## Auditing
-
-
-## Financial_Accounting
 
 ### 投資その他の資産の具体例
 
