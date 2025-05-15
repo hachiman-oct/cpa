@@ -1,0 +1,43 @@
+#toc-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    #quarto-sidebar-toc-left {
+        display: block;
+    }
+
+    #TOC {
+        display: block;
+        position: fixed;
+        top: 4rem;
+        right: -100%;
+        max-width: 300px;
+        background-color: #444;
+        overflow-y: auto;
+        transition: right 0.3s ease-in-out;
+        padding: 1em;
+    }
+
+    #TOC.show {
+        right: 0;
+    }
+
+    #toc-toggle {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 0;
+        background-color: #444;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #quarto-margin-sidebar {
+        display: block;
+    }
+}
