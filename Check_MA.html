@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="hachiman_oct">
-<meta name="dcterms.date" content="2025-05-12">
+<meta name="dcterms.date" content="2025-05-15">
 
 <title>Check_MA</title>
 <style>
@@ -83,7 +83,7 @@ window.Quarto = {
   <ul>
   <li><a href="#原価管理とは" id="toc-原価管理とは" class="nav-link" data-scroll-target="#原価管理とは">原価管理とは</a></li>
   <li><a href="#製造間接費の部門別計算" id="toc-製造間接費の部門別計算" class="nav-link" data-scroll-target="#製造間接費の部門別計算">製造間接費の部門別計算</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#部門費の1次集計" id="toc-部門費の1次集計" class="nav-link" data-scroll-target="#部門費の1次集計">部門費の1次集計</a></li>
   <li><a href="#複数配賦基準法" id="toc-複数配賦基準法" class="nav-link" data-scroll-target="#複数配賦基準法">複数配賦基準法</a></li>
   </ul></li>
@@ -91,6 +91,7 @@ window.Quarto = {
   <li><a href="#副産物" id="toc-副産物" class="nav-link" data-scroll-target="#副産物">副産物</a></li>
   <li><a href="#フリーキャッシュフロー" id="toc-フリーキャッシュフロー" class="nav-link" data-scroll-target="#フリーキャッシュフロー">フリーキャッシュフロー</a></li>
   <li><a href="#eva" id="toc-eva" class="nav-link" data-scroll-target="#eva">EVA</a></li>
+  <li><a href="#資金管理" id="toc-資金管理" class="nav-link" data-scroll-target="#資金管理">資金管理</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -116,7 +117,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 12, 2025</p>
+      <p class="date">May 15, 2025</p>
     </div>
   </div>
   
@@ -128,10 +129,10 @@ window.Quarto = {
 </header>
 
 
-<section id="check_ma" class="level1">
-<h1>Check_MA</h1>
 <button id="toc-toggle">☰ TOC</button>
 <script src="https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/toc-right-toggle.js"></script>
+<section id="check_ma" class="level1">
+<h1>Check_MA</h1>
 <section id="原価管理とは" class="level3">
 <h3 class="anchored" data-anchor-id="原価管理とは">原価管理とは</h3>
 <table class="caption-top table">
@@ -201,12 +202,17 @@ r = \frac{1}{1+b}
 \]</span></p>
 <p>NOPAT = 営業利益 * (1-税率)</p>
 <p>FCF = NOPAT + Dep - 正味運転資本増加額 - 設備投資額</p>
+<p>フリー・キャッシュ・フローは営業ＣＦと投資ＣＦを合計して計算される。そのため，設備投資に資金を投下して投資ＣＦのマイナス額が大きくなったとしても，営業ＣＦを増加させることができれば，フリー・キャッシュ・フローは増加する．<strong><u>常に厳守するわけではない</u>．</strong></p>
 </section>
 <section id="eva" class="level3">
 <h3 class="anchored" data-anchor-id="eva">EVA</h3>
 <p>経済的付加価値は営業利益から税額と資本コストの額を控除するが，この場合の税額は，有利子負債コストの節税効果は反映されていない</p>
 <p>CC = 期首投下資本 * 加重平均資本コスト</p>
 <p>EVA = NOPAT - CC</p>
+</section>
+<section id="資金管理" class="level3">
+<h3 class="anchored" data-anchor-id="資金管理">資金管理</h3>
+<p>債務の支払ができず倒産に至るリスクを回避するためには，<strong><u>発生主義に基づく利益管理に加えて</u></strong>，キャッシュ・フローを含む資金管理が重要となる。</p>
 </section>
 </section>
 

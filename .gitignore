@@ -6,3 +6,4 @@ icons/
 *.qmd
 *.Rproj
 *_files/
+/.quarto/
