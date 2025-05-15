@@ -11,5 +11,4 @@ format:
     toc-expand: 2
 css:  
   - https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/darkmode.css
-  #- https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/toc-right-toggle.css
-  - test_resources/toc-right-toggle.css
+  - https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/toc-right-toggle.css
