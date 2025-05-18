@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="hachiman_oct">
-<meta name="dcterms.date" content="2025-05-15">
+<meta name="dcterms.date" content="2025-05-16">
 
 <title>Check_MA</title>
 <style>
@@ -68,7 +68,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/darkmode.css">
-<link rel="stylesheet" href="test_resources/toc-right-toggle.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/toc-right-toggle.css">
 </head>
 
 <body class="quarto-light">
@@ -79,9 +79,15 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#check_ma" id="toc-check_ma" class="nav-link active" data-scroll-target="#check_ma">Check_MA</a>
+  <li><a href="#check_ma" id="toc-check_ma" class="nav-link active" data-scroll-target="#check_ma">Check_MA</a></li>
+  <li><a href="#原価計算基準" id="toc-原価計算基準" class="nav-link" data-scroll-target="#原価計算基準">原価計算基準</a>
   <ul>
-  <li><a href="#原価管理とは" id="toc-原価管理とは" class="nav-link" data-scroll-target="#原価管理とは">原価管理とは</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">3(3)</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">28</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">32</a></li>
+  </ul></li>
+  <li><a href="#原価計算" id="toc-原価計算" class="nav-link" data-scroll-target="#原価計算">原価計算</a>
+  <ul>
   <li><a href="#製造間接費の部門別計算" id="toc-製造間接費の部門別計算" class="nav-link" data-scroll-target="#製造間接費の部門別計算">製造間接費の部門別計算</a>
   <ul>
   <li><a href="#部門費の1次集計" id="toc-部門費の1次集計" class="nav-link" data-scroll-target="#部門費の1次集計">部門費の1次集計</a></li>
@@ -89,9 +95,41 @@ window.Quarto = {
   </ul></li>
   <li><a href="#個別原価計算" id="toc-個別原価計算" class="nav-link" data-scroll-target="#個別原価計算">個別原価計算</a></li>
   <li><a href="#副産物" id="toc-副産物" class="nav-link" data-scroll-target="#副産物">副産物</a></li>
-  <li><a href="#フリーキャッシュフロー" id="toc-フリーキャッシュフロー" class="nav-link" data-scroll-target="#フリーキャッシュフロー">フリーキャッシュフロー</a></li>
+  </ul></li>
+  <li><a href="#管理会計" id="toc-管理会計" class="nav-link" data-scroll-target="#管理会計">管理会計</a>
+  <ul>
+  <li><a href="#管理会計総論" id="toc-管理会計総論" class="nav-link" data-scroll-target="#管理会計総論">1 管理会計総論</a></li>
+  <li><a href="#予算管理" id="toc-予算管理" class="nav-link" data-scroll-target="#予算管理">4 予算管理</a>
+  <ul>
+  <li><a href="#予算の体系と種類" id="toc-予算の体系と種類" class="nav-link" data-scroll-target="#予算の体系と種類">4.2 予算の体系と種類</a>
+  <ul class="collapse">
+  <li><a href="#予算の種類" id="toc-予算の種類" class="nav-link" data-scroll-target="#予算の種類">予算の種類</a></li>
+  </ul></li>
+  <li><a href="#補足" id="toc-補足" class="nav-link" data-scroll-target="#補足">4.補足</a>
+  <ul class="collapse">
+  <li><a href="#二本立ての予算" id="toc-二本立ての予算" class="nav-link" data-scroll-target="#二本立ての予算">二本立ての予算 <c></c></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#資金管理" id="toc-資金管理" class="nav-link" data-scroll-target="#資金管理">5 資金管理</a></li>
+  <li><a href="#原価管理" id="toc-原価管理" class="nav-link" data-scroll-target="#原価管理">6 原価管理</a>
+  <ul>
+  <li><a href="#原価管理とは" id="toc-原価管理とは" class="nav-link" data-scroll-target="#原価管理とは">原価管理とは</a></li>
+  </ul></li>
+  <li><a href="#abcabm" id="toc-abcabm" class="nav-link" data-scroll-target="#abcabm">7 ABC/ABM</a>
+  <ul>
+  <li><a href="#伝統的な原価計算の問題点" id="toc-伝統的な原価計算の問題点" class="nav-link" data-scroll-target="#伝統的な原価計算の問題点">7.1 伝統的な原価計算の問題点</a></li>
+  </ul></li>
+  <li><a href="#分権組織とグループ経営" id="toc-分権組織とグループ経営" class="nav-link" data-scroll-target="#分権組織とグループ経営">10 分権組織とグループ経営</a>
+  <ul>
+  <li><a href="#事業部の業績測定" id="toc-事業部の業績測定" class="nav-link" data-scroll-target="#事業部の業績測定">10.2 事業部の業績測定</a>
+  <ul class="collapse">
   <li><a href="#eva" id="toc-eva" class="nav-link" data-scroll-target="#eva">EVA</a></li>
-  <li><a href="#資金管理" id="toc-資金管理" class="nav-link" data-scroll-target="#資金管理">資金管理</a></li>
+  </ul></li>
+  <li><a href="#企業価値事業価値の評価" id="toc-企業価値事業価値の評価" class="nav-link" data-scroll-target="#企業価値事業価値の評価">10.5 企業価値・事業価値の評価</a>
+  <ul class="collapse">
+  <li><a href="#フリーキャッシュフロー" id="toc-フリーキャッシュフロー" class="nav-link" data-scroll-target="#フリーキャッシュフロー">フリーキャッシュフロー</a></li>
+  </ul></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -117,7 +155,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 15, 2025</p>
+      <p class="date">May 16, 2025</p>
     </div>
   </div>
   
@@ -133,8 +171,82 @@ window.Quarto = {
 <script src="https://cdn.jsdelivr.net/gh/hachiman-oct/resources@main/qmd/toc-right-toggle.js"></script>
 <section id="check_ma" class="level1">
 <h1>Check_MA</h1>
-<section id="原価管理とは" class="level3">
-<h3 class="anchored" data-anchor-id="原価管理とは">原価管理とは</h3>
+</section>
+<section id="原価計算基準" class="level1">
+<h1>原価計算基準</h1>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section">3(3)</h3>
+<p>原価は，経営目的に関連したものである。経営の目的は，一定の財貨を<strong><u>生産し販売</u></strong>することにあり，経営過程は，このための価値の消費と生成の過程である。原価は，かかる財貨の<strong><u>生産，販売</u></strong>に関して消費された経済価値であり，経営目的に関連しない価値の消費を含まない</p>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1">28</h3>
+<p>副産物の発生額が軽微である場合，これを売却して得た収入を<strong><u>原価計算外の収益</u></strong>とすることも認められている</p>
+</section>
+<section id="section-2" class="level3">
+<h3 class="anchored" data-anchor-id="section-2">32</h3>
+<p>個別原価計算における直接費は，発生のつど又は<strong><u>定期</u></strong>に整理分類して，これを当該指図書に賦課する</p>
+</section>
+</section>
+<section id="原価計算" class="level1">
+<h1>原価計算</h1>
+<section id="製造間接費の部門別計算" class="level3">
+<h3 class="anchored" data-anchor-id="製造間接費の部門別計算">製造間接費の部門別計算</h3>
+<section id="部門費の1次集計" class="level4">
+<h4 class="anchored" data-anchor-id="部門費の1次集計">部門費の1次集計</h4>
+<ul>
+<li>原価管理の見地から近年は部門個別費と部門共通費の区別をなくし，すべて部門個別費として把握する動向が見られる</li>
+</ul>
+</section>
+<section id="複数配賦基準法" class="level4">
+<h4 class="anchored" data-anchor-id="複数配賦基準法">複数配賦基準法</h4>
+<ul>
+<li>複数配賦基準法のもとでは，純理論的には相互配賦法の採用が前提</li>
+</ul>
+</section>
+</section>
+<section id="個別原価計算" class="level3">
+<h3 class="anchored" data-anchor-id="個別原価計算">個別原価計算</h3>
+<ul>
+<li>予算操業度は期待実際操業度や短期予定操業度と同義と捉えてよい</li>
+</ul>
+</section>
+<section id="副産物" class="level3">
+<h3 class="anchored" data-anchor-id="副産物">副産物</h3>
+<p>販管費の見積額は控除しない</p>
+</section>
+</section>
+<section id="管理会計" class="level1">
+<h1>管理会計</h1>
+<section id="管理会計総論" class="level2">
+<h2 class="anchored" data-anchor-id="管理会計総論">1 管理会計総論</h2>
+</section>
+<section id="予算管理" class="level2">
+<h2 class="anchored" data-anchor-id="予算管理">4 予算管理</h2>
+<section id="予算の体系と種類" class="level3">
+<h3 class="anchored" data-anchor-id="予算の体系と種類">4.2 予算の体系と種類</h3>
+<section id="予算の種類" class="level4">
+<h4 class="anchored" data-anchor-id="予算の種類">予算の種類</h4>
+<p>予算編成時点において予測できなかった経営環境の変化を予算に反映させるためにローリング（ころがし）方式を採用する予算を<strong><span style="color:red">継続的（継続）予算</span></strong>という。 また，予算編成時に前提とした条件が変化した場合に，予算に期待される統制機能を維持するために予算を修正することがある。この修正された予算を<strong><span style="color:red">実行予算</span></strong>と呼ぶ．</p>
+</section>
+</section>
+<section id="補足" class="level3">
+<h3 class="anchored" data-anchor-id="補足">4.補足</h3>
+<section id="二本立ての予算" class="level4">
+<h4 class="anchored" data-anchor-id="二本立ての予算">二本立ての予算 <c></c></h4>
+<ul>
+<li>計画および調整のための予算と，統制のための予算のタイトネス(厳しさ)は一致しないため，計画および調整のための予算と統制のための予算とを二本立てで設定すべきであると主張されている</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="資金管理" class="level2">
+<h2 class="anchored" data-anchor-id="資金管理">5 資金管理</h2>
+<p>債務の支払ができず倒産に至るリスクを回避するためには，<strong><u>発生主義に基づく利益管理に加えて</u></strong>，キャッシュ・フローを含む資金管理が重要となる。</p>
+</section>
+<section id="原価管理" class="level2">
+<h2 class="anchored" data-anchor-id="原価管理">6 原価管理</h2>
+<section id="原価管理とは" class="level4">
+<h4 class="anchored" data-anchor-id="原価管理とは">原価管理とは</h4>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 13%">
@@ -166,33 +278,29 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="製造間接費の部門別計算" class="level3">
-<h3 class="anchored" data-anchor-id="製造間接費の部門別計算">製造間接費の部門別計算</h3>
-<section id="部門費の1次集計" class="level4">
-<h4 class="anchored" data-anchor-id="部門費の1次集計">部門費の1次集計</h4>
-<ul>
-<li>原価管理の見地から近年は部門個別費と部門共通費の区別をなくし，すべて部門個別費として把握する動向が見られる</li>
-</ul>
 </section>
-<section id="複数配賦基準法" class="level4">
-<h4 class="anchored" data-anchor-id="複数配賦基準法">複数配賦基準法</h4>
-<ul>
-<li>複数配賦基準法のもとでは，純理論的には相互配賦法の採用が前提</li>
-</ul>
+<section id="abcabm" class="level2">
+<h2 class="anchored" data-anchor-id="abcabm">7 ABC/ABM</h2>
+<section id="伝統的な原価計算の問題点" class="level3">
+<h3 class="anchored" data-anchor-id="伝統的な原価計算の問題点">7.1 伝統的な原価計算の問題点</h3>
+<p>ＡＢＣは，企業環境の激変により伝統的原価計算が陳腐化したために，アメリカで工夫された戦略的原価計算であり，その主たる目的は戦略的プロダクト・ミックスを決定することにある</p>
 </section>
 </section>
-<section id="個別原価計算" class="level3">
-<h3 class="anchored" data-anchor-id="個別原価計算">個別原価計算</h3>
-<ul>
-<li>予算操業度は期待実際操業度や短期予定操業度と同義と捉えてよい</li>
-</ul>
+<section id="分権組織とグループ経営" class="level2">
+<h2 class="anchored" data-anchor-id="分権組織とグループ経営">10 分権組織とグループ経営</h2>
+<section id="事業部の業績測定" class="level3">
+<h3 class="anchored" data-anchor-id="事業部の業績測定">10.2 事業部の業績測定</h3>
+<section id="eva" class="level4">
+<h4 class="anchored" data-anchor-id="eva">EVA</h4>
+<p>経済的付加価値は営業利益から税額と資本コストの額を控除するが，この場合の税額は，有利子負債コストの節税効果は反映されていない</p>
+<p>CC = 期首投下資本 * 加重平均資本コスト</p>
+<p>EVA = NOPAT - CC</p>
 </section>
-<section id="副産物" class="level3">
-<h3 class="anchored" data-anchor-id="副産物">副産物</h3>
-<p>販管費の見積額は控除しない</p>
 </section>
-<section id="フリーキャッシュフロー" class="level3">
-<h3 class="anchored" data-anchor-id="フリーキャッシュフロー">フリーキャッシュフロー</h3>
+<section id="企業価値事業価値の評価" class="level3">
+<h3 class="anchored" data-anchor-id="企業価値事業価値の評価">10.5 企業価値・事業価値の評価</h3>
+<section id="フリーキャッシュフロー" class="level4">
+<h4 class="anchored" data-anchor-id="フリーキャッシュフロー">フリーキャッシュフロー</h4>
 <p><span class="math display">\[
 \sum^{\infty} ar^{n} = \frac{ar}{1-r}
 \]</span> <span class="math display">\[
@@ -204,15 +312,7 @@ r = \frac{1}{1+b}
 <p>FCF = NOPAT + Dep - 正味運転資本増加額 - 設備投資額</p>
 <p>フリー・キャッシュ・フローは営業ＣＦと投資ＣＦを合計して計算される。そのため，設備投資に資金を投下して投資ＣＦのマイナス額が大きくなったとしても，営業ＣＦを増加させることができれば，フリー・キャッシュ・フローは増加する．<strong><u>常に厳守するわけではない</u>．</strong></p>
 </section>
-<section id="eva" class="level3">
-<h3 class="anchored" data-anchor-id="eva">EVA</h3>
-<p>経済的付加価値は営業利益から税額と資本コストの額を控除するが，この場合の税額は，有利子負債コストの節税効果は反映されていない</p>
-<p>CC = 期首投下資本 * 加重平均資本コスト</p>
-<p>EVA = NOPAT - CC</p>
 </section>
-<section id="資金管理" class="level3">
-<h3 class="anchored" data-anchor-id="資金管理">資金管理</h3>
-<p>債務の支払ができず倒産に至るリスクを回避するためには，<strong><u>発生主義に基づく利益管理に加えて</u></strong>，キャッシュ・フローを含む資金管理が重要となる。</p>
 </section>
 </section>
 
