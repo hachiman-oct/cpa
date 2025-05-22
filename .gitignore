@@ -5,6 +5,6 @@
 icons/
 *.qmd
 *.Rproj
-*_files/
 /.quarto/
 *.yml
+.vscode/
