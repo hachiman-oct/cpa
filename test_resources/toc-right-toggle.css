@@ -18,7 +18,7 @@
         overflow-y: auto;
         transition: right 0.3s ease-in-out;
         padding: 1em;
-        height: 30rem;
+        max-height: 30rem;
     }
 
     #TOC.show {
