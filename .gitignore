@@ -8,3 +8,4 @@ icons/
 /.quarto/
 *.yml
 .vscode/
+test_resources/
